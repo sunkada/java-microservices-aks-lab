@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config-server
+data:
+  # property-like keys; each key maps to a simple value
+  CONFIG_SERVER_URL: "http://config-server:8888"
+  APPLICATIONINSIGHTS_CONNECTION_STRING: "InstrumentationKey=243c3a89-09f5-4b9d-98c9-20c6e23d67e9;IngestionEndpoint=https://westeurope-5.in.applicationinsights.azure.com/;LiveEndpoint=https://westeurope.livediagnostics.monitor.azure.com/"
